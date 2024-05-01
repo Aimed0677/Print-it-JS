@@ -16,3 +16,12 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+//Ajout des even listener sur les fleches 
+let arrowClickRight = document.querySelector(".arrow_right");
+arrowClickRight.addEventListener("click", function () {
+	console.log("Vous avez cliqué sur le bouton droit")
+});
+let arrowClickLeft = document.querySelector(".arrow_left");
+arrowClickLeft.addEventListener("click", function () {
+	console.log("Vous avez cliqué sur le bouton gauche")
+});
