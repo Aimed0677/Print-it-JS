@@ -25,3 +25,15 @@ let arrowClickLeft = document.querySelector(".arrow_left");
 arrowClickLeft.addEventListener("click", function () {
 	console.log("Vous avez cliqué sur le bouton gauche")
 });
+//Ajout des bullet points 
+for (let i = 0; i < slides.length; i++) {
+	let bullet = document.createElement("div");
+	let bulletConteneur = document.querySelector(".dots");
+	bulletConteneur.appendChild(bullet);
+	bullet.classList.add("dot");
+}
+// differencier le bullet de l'image selectioné 
+let bulletSelected = document.querySelector(".dot")
+if ( slides[0] = 1 ) {
+	bulletSelected.classList.add("dot_selected");
+}
